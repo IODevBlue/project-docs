@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BannerXIndicator</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>BannerX</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="BannerX::com.blueiobase.api.android.bannerx.base/BannerXIndicator///PointingToDeclaration//1462455468">
+  <div class="breadcrumbs"><a href="../../../index.html">BannerX</a><span class="delimiter">/</span><a href="../index.html">com.blueiobase.api.android.bannerx.base</a><span class="delimiter">/</span><span class="current">BannerXIndicator</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Banner</span><wbr></wbr><span><span>XIndicator</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">BannerXIndicator</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>params<span class="token operator">: </span><a href="../-indicator-params/index.html">IndicatorParams</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="android.os/Parcelable///PointingToDeclaration/">Parcelable</span></div><p class="paragraph">This class represents an animated indicator anchored at the bottom of <code class="lang-kotlin">BannerX</code> to indicate the current <code class="lang-kotlin">Banner</code> object.</p><p class="paragraph">The <a href="../-indicator-params/index.html">IndicatorParams</a> data class stores data for generally setting up <a href="index.html">BannerXIndicator</a> classes to share and use the same properties. This is to aid in prompt setup if these data are available for uniformity when switching <a href="index.html">BannerXIndicator</a> implementations.</p><p class="paragraph">Although not required, it is recommended that each implementation of this abstract class should have properties with the same signature name as properties in the <a href="../-indicator-params/index.html">IndicatorParams</a> which perform similar functions.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">IODevBlue</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">1.0.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1705970181%2FConstructors%2F1462455468" anchor-label="BannerXIndicator" id="1705970181%2FConstructors%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-banner-x-indicator.html"><span>Banner</span><wbr></wbr><span><span>XIndicator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705970181%2FConstructors%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-banner-x-indicator.html"><span class="token function">BannerXIndicator</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">params<span class="token operator">: </span><a href="../-indicator-params/index.html">IndicatorParams</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="306856947%2FFunctions%2F1462455468" anchor-label="applyFadeOnIdle" id="306856947%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="apply-fade-on-idle.html"><span>apply</span><wbr></wbr><span>Fade</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Idle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="306856947%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="apply-fade-on-idle.html"><span class="token function">applyFadeOnIdle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Apply a fade animation when the <a href="index.html">BannerXIndicator</a> is idle to hide it.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1826585940%2FFunctions%2F1462455468" anchor-label="getIndicatorView" id="-1826585940%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-indicator-view.html"><span>get</span><wbr></wbr><span>Indicator</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1826585940%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-indicator-view.html"><span class="token function">getIndicatorView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> representation of the <a href="index.html">BannerXIndicator</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1986875426%2FFunctions%2F1462455468" anchor-label="onBannerScrolled" id="-1986875426%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-banner-scrolled.html"><span>on</span><wbr></wbr><span>Banner</span><wbr></wbr><span><span>Scrolled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1986875426%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-banner-scrolled.html"><span class="token function">onBannerScrolled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">positionOffset<span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span><span class="token punctuation">, </span></span><span class="parameter ">positionOffsetPixels<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is invoked by <code class="lang-kotlin">BannerX</code> when the current <code class="lang-kotlin">Banner</code> is being scrolled.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="740675650%2FFunctions%2F1462455468" anchor-label="onBannerSelected" id="740675650%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on-banner-selected.html"><span>on</span><wbr></wbr><span>Banner</span><wbr></wbr><span><span>Selected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="740675650%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-banner-selected.html"><span class="token function">onBannerSelected</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is invoked when a new <code class="lang-kotlin">Banner</code> is selected by <code class="lang-kotlin">BannerX</code>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1701934505%2FFunctions%2F1462455468" anchor-label="removeFadeOnIdle" id="-1701934505%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="remove-fade-on-idle.html"><span>remove</span><wbr></wbr><span>Fade</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Idle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1701934505%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-fade-on-idle.html"><span class="token function">removeFadeOnIdle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Apply an animation to gradually display the <a href="index.html">BannerXIndicator</a> when hidden.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1953461782%2FFunctions%2F1462455468" anchor-label="resetUsingParams" id="1953461782%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reset-using-params.html"><span>reset</span><wbr></wbr><span>Using</span><wbr></wbr><span><span>Params</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1953461782%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="reset-using-params.html"><span class="token function">resetUsingParams</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">params<span class="token operator">: </span><a href="../-indicator-params/index.html">IndicatorParams</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reset an existing <a href="index.html">BannerXIndicator</a> instance to use the properties from the provided <a href="reset-using-params.html">params</a> object.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1936173398%2FFunctions%2F1462455468" anchor-label="setContext" id="-1936173398%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-context.html"><span>set</span><wbr></wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1936173398%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-context.html"><span class="token function">setContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">BannerXIndicator</a></div><div class="brief "><p class="paragraph">The <span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span> object to be used internally by the <a href="index.html">BannerXIndicator</a> implementation.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="401135199%2FFunctions%2F1462455468" anchor-label="supportsBannerTitles" id="401135199%2FFunctions%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="supports-banner-titles.html"><span>supports</span><wbr></wbr><span>Banner</span><wbr></wbr><span><span>Titles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="401135199%2FFunctions%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="supports-banner-titles.html"><span class="token function">supportsBannerTitles</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Validates if this <a href="index.html">BannerXIndicator</a> supports displaying <code class="lang-kotlin">Banner</code> titles.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-359140348%2FProperties%2F1462455468" anchor-label="params" id="-359140348%2FProperties%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="params.html"><span><span>params</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-359140348%2FProperties%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><a data-name="-359140348%2FProperties%2F1462455468" anchor-label="params" id="-359140348%2FProperties%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="params.html">params</a><span class="token operator">: </span><a href="../-indicator-params/index.html">IndicatorParams</a><span class="token operator">?</span></div><div class="brief "><a data-name="-359140348%2FProperties%2F1462455468" anchor-label="params" id="-359140348%2FProperties%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a><p class="paragraph">Use the properties stored in this <a href="../-indicator-params/index.html">IndicatorParams</a> object to setup the <a href="index.html">BannerXIndicator</a> instance.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="882744630%2FInheritors%2F1462455468" anchor-label="DefaultBannerIndicator" id="882744630%2FInheritors%2F1462455468" data-filterable-set=":bannerx:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-default-banner-indicator/index.html">DefaultBannerIndicator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="882744630%2FInheritors%2F1462455468"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

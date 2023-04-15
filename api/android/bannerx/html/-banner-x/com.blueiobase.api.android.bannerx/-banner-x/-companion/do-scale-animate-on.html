@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>doScaleAnimateOn</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>BannerX</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="BannerX::com.blueiobase.api.android.bannerx/BannerX.Companion/doScaleAnimateOn/#android.view.View#com.blueiobase.api.android.bannerx.util.BannerScaleAnimateParams#android.view.View.OnClickListener?#android.view.View.OnLongClickListener?#android.view.View.OnTouchListener?/PointingToDeclaration//1462455468">
+  <div class="breadcrumbs"><a href="../../../../index.html">BannerX</a><span class="delimiter">/</span><a href="../../index.html">com.blueiobase.api.android.bannerx</a><span class="delimiter">/</span><a href="../index.html">BannerX</a><span class="delimiter">/</span><a href="index.html">Companion</a><span class="delimiter">/</span><span class="current">doScaleAnimateOn</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>do</span><wbr></wbr><span>Scale</span><wbr></wbr><span>Animate</span><wbr></wbr><span><span>On</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="do-scale-animate-on.html"><span class="token function">doScaleAnimateOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">view<span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><a href="../../../com.blueiobase.api.android.bannerx.util/-banner-scale-animate-params/index.html">BannerScaleAnimateParams</a><span class="token punctuation">, </span></span><span class="parameter ">onClickListener<span class="token operator">: </span><span data-unresolved-link="android.view/View.OnClickListener///PointingToDeclaration/">View.OnClickListener</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onLongClickListener<span class="token operator">: </span><span data-unresolved-link="android.view/View.OnLongClickListener///PointingToDeclaration/">View.OnLongClickListener</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">onTouchListener<span class="token operator">: </span><span data-unresolved-link="android.view/View.OnTouchListener///PointingToDeclaration/">View.OnTouchListener</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">Utility method to apply touch and click scaling to a <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> when using a <a href="../-custom-adapter/index.html">CustomAdapter</a> in <a href="../index.html">BannerX</a>.</p><h4 class="">See also</h4><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../banner-scale-animate-params.html"><span>BannerX.</span><wbr></wbr><span>banner</span><wbr></wbr><span>Scale</span><wbr></wbr><span>Animate</span><wbr></wbr><span><span>Params</span></span></a></div></span></div><div></div></div></div></div></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>view</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> which a scale animation should be applied on when touched on clicked.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>params</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The <a href="../../../com.blueiobase.api.android.bannerx.util/-banner-scale-animate-params/index.html">BannerScaleAnimateParams</a> containing scaling parameters.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Click</span><wbr></wbr><span><span>Listener</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The listener for click events.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Long</span><wbr></wbr><span>Click</span><wbr></wbr><span><span>Listener</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The listener for long click events.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":bannerx:dokkaHtml/release" data-filterable-set=":bannerx:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>on</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Listener</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The listener for touch events. If this parameter is set to <code class="lang-kotlin">null</code>, a scale animation is applied to the <a href="do-scale-animate-on.html">view</a>     when touched. Unless this behavior is to be overridden, it is best to keep this parameter <code class="lang-kotlin">null</code>.</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

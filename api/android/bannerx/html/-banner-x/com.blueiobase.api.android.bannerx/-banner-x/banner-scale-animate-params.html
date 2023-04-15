@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>bannerScaleAnimateParams</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>BannerX</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="BannerX::com.blueiobase.api.android.bannerx/BannerX/bannerScaleAnimateParams/#/PointingToDeclaration//1462455468">
+  <div class="breadcrumbs"><a href="../../../index.html">BannerX</a><span class="delimiter">/</span><a href="../index.html">com.blueiobase.api.android.bannerx</a><span class="delimiter">/</span><a href="index.html">BannerX</a><span class="delimiter">/</span><span class="current">bannerScaleAnimateParams</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>banner</span><wbr></wbr><span>Scale</span><wbr></wbr><span>Animate</span><wbr></wbr><span><span>Params</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bannerx:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="banner-scale-animate-params.html">bannerScaleAnimateParams</a><span class="token operator">: </span><a href="../../com.blueiobase.api.android.bannerx.util/-banner-scale-animate-params/index.html">BannerScaleAnimateParams</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><p class="paragraph">The parameters for the scale animation applied to <a href="../../com.blueiobase.api.android.bannerx.model/-banner/index.html">Banner</a> objects when touched or clicked.</p><p class="paragraph">The <a href="../../com.blueiobase.api.android.bannerx.util/-banner-scale-animate-params/index.html">BannerScaleAnimateParams</a> interferes with the scale animations of several <a href="../../com.blueiobase.api.android.bannerx.base/-banner-x-transformer/index.html">BannerXTransformer</a> objects applied on <a href="index.html">BannerX</a>, so the use case of applying scaling when pressing and touching a <a href="../../com.blueiobase.api.android.bannerx.model/-banner/index.html">Banner</a> would vary.</p><p class="paragraph"><strong>NOTE:</strong> This is only applied if a <a href="-custom-adapter/index.html">CustomAdapter</a> is <strong>NOT</strong> available in <a href="index.html">BannerX</a>. If a <a href="-custom-adapter/index.html">CustomAdapter</a> has been provided to <a href="index.html">BannerX</a> then use the <a href="-companion/do-scale-animate-on.html">BannerX.doScaleAnimateOn</a> static method or clear the <a href="-custom-adapter/index.html">CustomAdapter</a> using <a href="clear-custom-adapter.html">clearCustomAdapter</a>.</p></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

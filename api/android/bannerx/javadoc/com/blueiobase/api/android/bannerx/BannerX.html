@@ -1,0 +1,2483 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>BannerX </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../../../../jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../../../../search.js"></script>
+    <script async type="text/javascript" src="../../../../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../../../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="header">
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <h2 title="Class BannerX" class="title">Class BannerX</h2>
+    </div>
+    <div class="contentContainer">
+        <!-- <ul class="inheritance">
+            <li>java.lang.Object</li>
+            <li>
+                <ul class="inheritance">
+                    <li>adaptation.Adaptation</li>
+                </ul>
+            </li>
+        </ul> TODO inheritance tree -->
+        <div class="description">
+            <ul class="blockList">
+                <li class="blockList">
+                    
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                            <code>android.graphics.drawable.Drawable.Callback</code>
+                            
+                            ,
+                            
+                            
+                            <code>android.view.KeyEvent.Callback</code>
+                            
+                            ,
+                            
+                            
+                            <code>android.view.ViewManager</code>
+                            
+                            ,
+                            
+                            
+                            <code>android.view.ViewParent</code>
+                            
+                            ,
+                            
+                            
+                            <code>android.view.accessibility.AccessibilityEventSource</code>
+                            
+                            
+                        </dd>
+                    </dl>
+                    
+                    <hr>
+                    <pre class="wrap-overflow">
+
+public final class <span class="typeNameLabel"><a href=BannerX.html>BannerX</a></span>
+extends RelativeLayout
+                    </pre>
+                    <div class="block"><p>BannerX is an android widget which provides an intuitive way to display advertisements and slideshows.</p><p>BannerX uses an internal ViewPager2 implementation to provide swiping and automated scrolling capabilities. The callback events of this internal ViewPager2 are provided through the <a href=BannerX.OnBannerChangeListener.html>OnBannerChangeListener</a> interface.</p><p>The position of the last viewed <a href=model/Banner.html>Banner</a> is internally stored making it easy to continue auto-looping on configuration changes, however the list of <a href=model/Banner.html>Banner</a> items and any custom ViewPager2.PageTransformer implementations have to be provided during every instance restoration.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div class="summary">
+            <ul class="blockList">
+                <li class="blockList">
+                <!-- ======== NESTED CLASS SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="nested.class.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Nested Class Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Class</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.Companion.html">BannerX.Companion</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.OnBannerChangeListener.html">BannerX.OnBannerChangeListener</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Interface for monitoring and responding to <a href=com/blueiobase/api/android/bannerx/model/Banner.html>Banner</a> changes and state.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.OnBannerClickListener.html">BannerX.OnBannerClickListener</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Interface for detecting item clicks on <a href=com/blueiobase/api/android/bannerx/BannerX.html>BannerX</a>.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.OnBannerDoubleClickListener.html">BannerX.OnBannerDoubleClickListener</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Interface for detecting double clicks on <a href=com/blueiobase/api/android/bannerx/BannerX.html>BannerX</a>.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.OnBannerLongClickListener.html">BannerX.OnBannerLongClickListener</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Interface for detecting long clicks on <a href=com/blueiobase/api/android/bannerx/BannerX.html>BannerX</a>.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.CustomAdapter.html">BannerX.CustomAdapter</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p><a href=com/blueiobase/api/android/bannerx/BannerX.html>BannerX</a> adapter for loading <a href=com/blueiobase/api/android/bannerx/model/Banner.html>Banner</a> objects with a custom View.</p><p>This is best implemented when there is a need to be in more control of the binding of <a href=com/blueiobase/api/android/bannerx/model/Banner.html>Banner</a> data to View objects. It follows the RecyclerView.Adapter pattern.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="BannerX.BannerViewHolder.html">BannerX.BannerViewHolder</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>This class is used internally by <a href=com/blueiobase/api/android/bannerx/BannerX.html>BannerX</a> to contain inflated View objects for each <a href=com/blueiobase/api/android/bannerx/model/Banner.html>Banner</a> in its collection.</p></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== FIELD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="field.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Field Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Field</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=base/IndicatorParams.html>IndicatorParams</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#indicatorParams>indicatorParams</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#bannerScaleAnimateParams>bannerScaleAnimateParams</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=base/BannerXTransformer.html>BannerXTransformer</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#bannerXTransformer>bannerXTransformer</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=base/BannerXIndicator.html>BannerXIndicator</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#bannerXIndicator>bannerXIndicator</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=enums/IndicatorVerticalAlignment.html>IndicatorVerticalAlignment</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#indicatorVerticalAlignment>indicatorVerticalAlignment</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=BannerX.OnBannerChangeListener.html>BannerX.OnBannerChangeListener</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#onBannerChangeListener>onBannerChangeListener</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=BannerX.OnBannerClickListener.html>BannerX.OnBannerClickListener</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#onBannerClickListener>onBannerClickListener</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=BannerX.OnBannerLongClickListener.html>BannerX.OnBannerLongClickListener</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#onBannerLongClickListener>onBannerLongClickListener</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=BannerX.OnBannerDoubleClickListener.html>BannerX.OnBannerDoubleClickListener</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#onBannerDoubleClickListener>onBannerDoubleClickListener</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isAutoLoopable()>isAutoLoopable</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isManualLoopable()>isManualLoopable</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isSwipeable()>isSwipeable</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isBannerClickable()>isBannerClickable</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=enums/OverScrollMode.html>OverScrollMode</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#overScrollMode>overScrollMode</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  Long</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#autoLoopDelay>autoLoopDelay</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  Long</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#autoLoopSpeed>autoLoopSpeed</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#showIndicatorText>showIndicatorText</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#allowIndicator>allowIndicator</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=enums/BannerXDirection.html>BannerXDirection</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#bannerXDirection>bannerXDirection</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=enums/BannerXOrientation.html>BannerXOrientation</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#bannerXOrientation>bannerXOrientation</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isRunning()>isRunning</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isStarted()>isStarted</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final Boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isStopped()>isStopped</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="constructor.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Constructor Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tbody>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Constructor</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#BannerX(Context,AttributeSet,Integer)">BannerX</a></span>(Context context, AttributeSet attrs, Integer defStyle)</code></th>
+                                                <td class="colLast"></td>
+                                            </tr>
+                                        
+                                            <tr class="rowColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#BannerX(Context,AttributeSet)">BannerX</a></span>(Context context, AttributeSet attrs)</code></th>
+                                                <td class="colLast"></td>
+                                            </tr>
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#BannerX(Context)">BannerX</a></span>(Context context)</code></th>
+                                                <td class="colLast"></td>
+                                            </tr>
+                                        
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="enum.constant.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Enum Constant Summary</h3>
+                                <table class="memberSummary">
+                                    <caption><span>Enum Constants</span><span class="tabEnd">&nbsp;</span></caption>
+                                    <tr>
+                                        <th class="colFirst" scope="col">Enum Constant</th>
+                                        <th class="colLast" scope="col">Description</th>
+                                    </tr>
+                                    
+                                </table>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ========== METHOD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Method Summary</h3>
+                                <div class="memberSummary">
+                                    <div role="tablist" aria-orientation="horizontal">
+                                        <button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button>
+                                        <!-- TODO: Instance and Concrete Methods #1118 -->
+                                    </div>
+                                    <div id="memberSummary_tabpanel" role="tabpanel">
+                                    <table aria-labelledby="t0">
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Method</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final <a href=base/IndicatorParams.html>IndicatorParams</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getIndicatorParams()>getIndicatorParams</a>() </code>
+                                            </th>
+                                            <td class="colLast">The <a href=base/IndicatorParams.html>IndicatorParams</a> to be applied to the current <a href=BannerX.html#bannerXIndicator>bannerXIndicator</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setIndicatorParams(IndicatorParams)>setIndicatorParams</a>(<a href=base/IndicatorParams.html>IndicatorParams</a> indicatorParams) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getBannerScaleAnimateParams()>getBannerScaleAnimateParams</a>() </code>
+                                            </th>
+                                            <td class="colLast">The parameters for the scale animation applied to <a href=model/Banner.html>Banner</a> objects when touched or clicked.</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerScaleAnimateParams(BannerScaleAnimateParams)>setBannerScaleAnimateParams</a>(<a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a> bannerScaleAnimateParams) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>final <a href=base/BannerXTransformer.html>BannerXTransformer</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getBannerXTransformer()>getBannerXTransformer</a>() </code>
+                                            </th>
+                                            <td class="colLast">The <a href=base/BannerXTransformer.html>BannerXTransformer</a> to handling swiping animations.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerXTransformer(BannerXTransformer)>setBannerXTransformer</a>(<a href=base/BannerXTransformer.html>BannerXTransformer</a> bannerXTransformer) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final <a href=base/BannerXIndicator.html>BannerXIndicator</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getBannerXIndicator()>getBannerXIndicator</a>() </code>
+                                            </th>
+                                            <td class="colLast">The <a href=base/BannerXIndicator.html>BannerXIndicator</a> widget for displaying the number of <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerXIndicator(BannerXIndicator)>setBannerXIndicator</a>(<a href=base/BannerXIndicator.html>BannerXIndicator</a> bannerXIndicator) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>final <a href=enums/IndicatorVerticalAlignment.html>IndicatorVerticalAlignment</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getIndicatorVerticalAlignment()>getIndicatorVerticalAlignment</a>() </code>
+                                            </th>
+                                            <td class="colLast">The vertical position of the current <a href=BannerX.html#bannerXIndicator>indicator</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setIndicatorVerticalAlignment(IndicatorVerticalAlignment)>setIndicatorVerticalAlignment</a>(<a href=enums/IndicatorVerticalAlignment.html>IndicatorVerticalAlignment</a> indicatorVerticalAlignment) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.OnBannerChangeListener.html>BannerX.OnBannerChangeListener</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getOnBannerChangeListener()>getOnBannerChangeListener</a>() </code>
+                                            </th>
+                                            <td class="colLast">Listener for <a href=model/Banner.html>Banner</a> scroll state changes.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerChangeListener(BannerX.OnBannerChangeListener)>setOnBannerChangeListener</a>(<a href=BannerX.OnBannerChangeListener.html>BannerX.OnBannerChangeListener</a> onBannerChangeListener) </code>
+                                            </th>
+                                            <td class="colLast">Listener for <a href=model/Banner.html>Banner</a> scroll state changes.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.OnBannerClickListener.html>BannerX.OnBannerClickListener</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getOnBannerClickListener()>getOnBannerClickListener</a>() </code>
+                                            </th>
+                                            <td class="colLast">Listener for clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerClickListener(BannerX.OnBannerClickListener)>setOnBannerClickListener</a>(<a href=BannerX.OnBannerClickListener.html>BannerX.OnBannerClickListener</a> onBannerClickListener) </code>
+                                            </th>
+                                            <td class="colLast">Listener for clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.OnBannerLongClickListener.html>BannerX.OnBannerLongClickListener</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getOnBannerLongClickListener()>getOnBannerLongClickListener</a>() </code>
+                                            </th>
+                                            <td class="colLast">Listener for long clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerLongClickListener(BannerX.OnBannerLongClickListener)>setOnBannerLongClickListener</a>(<a href=BannerX.OnBannerLongClickListener.html>BannerX.OnBannerLongClickListener</a> onBannerLongClickListener) </code>
+                                            </th>
+                                            <td class="colLast">Listener for long clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.OnBannerDoubleClickListener.html>BannerX.OnBannerDoubleClickListener</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getOnBannerDoubleClickListener()>getOnBannerDoubleClickListener</a>() </code>
+                                            </th>
+                                            <td class="colLast">Listener for double clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i17" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerDoubleClickListener(BannerX.OnBannerDoubleClickListener)>setOnBannerDoubleClickListener</a>(<a href=BannerX.OnBannerDoubleClickListener.html>BannerX.OnBannerDoubleClickListener</a> onBannerDoubleClickListener) </code>
+                                            </th>
+                                            <td class="colLast">Listener for double clicks on <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isAutoLoopable()>isAutoLoopable</a>() </code>
+                                            </th>
+                                            <td class="colLast">Enable or disable auto-looping/slideshows.</td>
+                                        </tr>
+                                        
+                                        <tr id="i19" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setAutoLoopable(Boolean)>setAutoLoopable</a>(Boolean isAutoLoopable) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i20" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isManualLoopable()>isManualLoopable</a>() </code>
+                                            </th>
+                                            <td class="colLast">Enable or disable user initiated infinite scrolling.</td>
+                                        </tr>
+                                        
+                                        <tr id="i21" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setManualLoopable(Boolean)>setManualLoopable</a>(Boolean isManualLoopable) </code>
+                                            </th>
+                                            <td class="colLast">Enable or disable user initiated infinite scrolling.</td>
+                                        </tr>
+                                        
+                                        <tr id="i22" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isSwipeable()>isSwipeable</a>() </code>
+                                            </th>
+                                            <td class="colLast">Make <a href=BannerX.html>BannerX</a> swipeable.</td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setSwipeable(Boolean)>setSwipeable</a>(Boolean isSwipeable) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i24" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isBannerClickable()>isBannerClickable</a>() </code>
+                                            </th>
+                                            <td class="colLast">Enable clicks on each <a href=model/Banner.html>Banner</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i25" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerClickable(Boolean)>setBannerClickable</a>(Boolean isBannerClickable) </code>
+                                            </th>
+                                            <td class="colLast">Enable clicks on each <a href=model/Banner.html>Banner</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i26" class="altColor">
+                                            <td class="colFirst"><code>final <a href=enums/OverScrollMode.html>OverScrollMode</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getOverScrollMode()>getOverScrollMode</a>() </code>
+                                            </th>
+                                            <td class="colLast">The over-scroll behaviour to be applied to <a href=BannerX.html>BannerX</a> when content has reached the end.</td>
+                                        </tr>
+                                        
+                                        <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOverScrollMode(OverScrollMode)>setOverScrollMode</a>(<a href=enums/OverScrollMode.html>OverScrollMode</a> overScrollMode) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i28" class="altColor">
+                                            <td class="colFirst"><code>final Long</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getAutoLoopDelay()>getAutoLoopDelay</a>() </code>
+                                            </th>
+                                            <td class="colLast">The time it takes for slideshows to swap <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        <tr id="i29" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setAutoLoopDelay(Long)>setAutoLoopDelay</a>(Long autoLoopDelay) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i30" class="altColor">
+                                            <td class="colFirst"><code>final Long</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getAutoLoopSpeed()>getAutoLoopSpeed</a>() </code>
+                                            </th>
+                                            <td class="colLast">The swiping speed applied during auto-looping <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        <tr id="i31" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setAutoLoopSpeed(Long)>setAutoLoopSpeed</a>(Long autoLoopSpeed) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i32" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getShowIndicatorText()>getShowIndicatorText</a>() </code>
+                                            </th>
+                                            <td class="colLast">Enable or disable the <a href=BannerX.html#bannerXIndicator>bannerXIndicator</a> widget's TextView.</td>
+                                        </tr>
+                                        
+                                        <tr id="i33" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setShowIndicatorText(Boolean)>setShowIndicatorText</a>(Boolean showIndicatorText) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i34" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getAllowIndicator()>getAllowIndicator</a>() </code>
+                                            </th>
+                                            <td class="colLast">Enable or disable the indicator widget.</td>
+                                        </tr>
+                                        
+                                        <tr id="i35" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setAllowIndicator(Boolean)>setAllowIndicator</a>(Boolean allowIndicator) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i36" class="altColor">
+                                            <td class="colFirst"><code>final <a href=enums/BannerXDirection.html>BannerXDirection</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getBannerXDirection()>getBannerXDirection</a>() </code>
+                                            </th>
+                                            <td class="colLast">The direction of movement for <a href=BannerX.html>BannerX</a> when auto-looping.</td>
+                                        </tr>
+                                        
+                                        <tr id="i37" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerXDirection(BannerXDirection)>setBannerXDirection</a>(<a href=enums/BannerXDirection.html>BannerXDirection</a> bannerXDirection) </code>
+                                            </th>
+                                            <td class="colLast">The direction of movement for <a href=BannerX.html>BannerX</a> when auto-looping.</td>
+                                        </tr>
+                                        
+                                        <tr id="i38" class="altColor">
+                                            <td class="colFirst"><code>final <a href=enums/BannerXOrientation.html>BannerXOrientation</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#getBannerXOrientation()>getBannerXOrientation</a>() </code>
+                                            </th>
+                                            <td class="colLast">The orientation for <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i39" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setBannerXOrientation(BannerXOrientation)>setBannerXOrientation</a>(<a href=enums/BannerXOrientation.html>BannerXOrientation</a> bannerXOrientation) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i40" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isRunning()>isRunning</a>() </code>
+                                            </th>
+                                            <td class="colLast">Verifies if <a href=BannerX.html>BannerX</a> auto-looping is running.</td>
+                                        </tr>
+                                        
+                                        <tr id="i41" class="rowColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isStarted()>isStarted</a>() </code>
+                                            </th>
+                                            <td class="colLast">Verifies if <a href=BannerX.html>BannerX</a> auto-looping has started.</td>
+                                        </tr>
+                                        
+                                        <tr id="i42" class="altColor">
+                                            <td class="colFirst"><code>final Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#isStopped()>isStopped</a>() </code>
+                                            </th>
+                                            <td class="colLast">Verifies if <a href=BannerX.html>BannerX</a> auto-looping has stopped.</td>
+                                        </tr>
+                                        
+                                        <tr id="i43" class="rowColor">
+                                            <td class="colFirst"><code>Boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#dispatchTouchEvent(MotionEvent)>dispatchTouchEvent</a>(MotionEvent ev) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i44" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.html>BannerX</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setShapeAppearanceModel(ShapeAppearanceModel,Boolean)>setShapeAppearanceModel</a>(ShapeAppearanceModel model, Boolean restart) </code>
+                                            </th>
+                                            <td class="colLast">Sets the ShapeAppearanceModel used to modify the corners and edges for each <a href=model/Banner.html>Banner</a> image.</td>
+                                        </tr>
+                                        
+                                        <tr id="i45" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.html>BannerX</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setShapeAppearanceModel(ShapeAppearanceModel,Boolean)>setShapeAppearanceModel</a>(ShapeAppearanceModel model) </code>
+                                            </th>
+                                            <td class="colLast">Sets the ShapeAppearanceModel used to modify the corners and edges for each <a href=model/Banner.html>Banner</a> image.</td>
+                                        </tr>
+                                        
+                                        <tr id="i46" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration, Long delay, TimeInterpolator interpolator) </code>
+                                            </th>
+                                            <td class="colLast">Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i47" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration, Long delay) </code>
+                                            </th>
+                                            <td class="colLast">Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i48" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration) </code>
+                                            </th>
+                                            <td class="colLast">Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i49" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset) </code>
+                                            </th>
+                                            <td class="colLast">Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i50" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.html>BannerX</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#useCustomAdapter(BannerX.CustomAdapter)>useCustomAdapter</a>(<a href=BannerX.CustomAdapter.html>BannerX.CustomAdapter</a> customAdapter) </code>
+                                            </th>
+                                            <td class="colLast">Set a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> which <a href=BannerX.html>BannerX</a> would use to inflate <a href=model/Banner.html>Banner</a> items.</td>
+                                        </tr>
+                                        
+                                        <tr id="i51" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.html>BannerX</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>(Boolean restart) </code>
+                                            </th>
+                                            <td class="colLast">Clears the <a href=BannerX.CustomAdapter.html>CustomAdapter</a> provided to <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i52" class="altColor">
+                                            <td class="colFirst"><code>final <a href=BannerX.html>BannerX</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>() </code>
+                                            </th>
+                                            <td class="colLast">Clears the <a href=BannerX.CustomAdapter.html>CustomAdapter</a> provided to <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i53" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#startAutoLoop()>startAutoLoop</a>() </code>
+                                            </th>
+                                            <td class="colLast">Starts auto-looping/slideshow.</td>
+                                        </tr>
+                                        
+                                        <tr id="i54" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#stopAutoLoop()>stopAutoLoop</a>() </code>
+                                            </th>
+                                            <td class="colLast">Stops the auto-looping/slideshow.</td>
+                                        </tr>
+                                        
+                                        <tr id="i55" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerClickListener(Function3)>setOnBannerClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec) </code>
+                                            </th>
+                                            <td class="colLast">Sets an <a href=BannerX.OnBannerClickListener.html>OnBannerClickListener</a> for <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i56" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerLongClickListener(Function3)>setOnBannerLongClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec) </code>
+                                            </th>
+                                            <td class="colLast">Sets an <a href=BannerX.OnBannerLongClickListener.html>OnBannerLongClickListener</a> for <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i57" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setOnBannerDoubleClickListener(Function3)>setOnBannerDoubleClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec) </code>
+                                            </th>
+                                            <td class="colLast">Sets an <a href=BannerX.OnBannerDoubleClickListener.html>OnBannerDoubleClickListener</a> for <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i58" class="altColor">
+                                            <td class="colFirst"><code>final Integer</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#numberOfBanners()>numberOfBanners</a>() </code>
+                                            </th>
+                                            <td class="colLast">Gets the number of <a href=model/Banner.html>Banner</a> objects this <a href=BannerX.html>BannerX</a> is handling.</td>
+                                        </tr>
+                                        
+                                        <tr id="i59" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setCurrentBanner(Integer,Boolean)>setCurrentBanner</a>(Integer position, Boolean smoothScroll) </code>
+                                            </th>
+                                            <td class="colLast">Sets the <a href=model/Banner.html>Banner</a> at <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>position</a> to be displayed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i60" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setCurrentBanner(Integer,Boolean)>setCurrentBanner</a>(Integer position) </code>
+                                            </th>
+                                            <td class="colLast">Sets the <a href=model/Banner.html>Banner</a> at <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>position</a> to be displayed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i61" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList, Boolean forceUpdateIfEmpty, Integer startAtIndex) </code>
+                                            </th>
+                                            <td class="colLast">Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i62" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList, Boolean forceUpdateIfEmpty) </code>
+                                            </th>
+                                            <td class="colLast">Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i63" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList) </code>
+                                            </th>
+                                            <td class="colLast">Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</td>
+                                        </tr>
+                                        
+                                        <tr id="i64" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#restart(Boolean,Integer)>restart</a>(Boolean retainCurrentPosition, Integer restartAtIndex) </code>
+                                            </th>
+                                            <td class="colLast">Force <a href=BannerX.html>BannerX</a> to invalidate itself.</td>
+                                        </tr>
+                                        
+                                        <tr id="i65" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#restart(Boolean,Integer)>restart</a>(Boolean retainCurrentPosition) </code>
+                                            </th>
+                                            <td class="colLast">Force <a href=BannerX.html>BannerX</a> to invalidate itself.</td>
+                                        </tr>
+                                        
+                                        <tr id="i66" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#restart(Boolean,Integer)>restart</a>() </code>
+                                            </th>
+                                            <td class="colLast">Force <a href=BannerX.html>BannerX</a> to invalidate itself.</td>
+                                        </tr>
+                                        
+                                        <tr id="i67" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#setCustomPageTransformer(ViewPager2.PageTransformer,Boolean)>setCustomPageTransformer</a>(ViewPager2.PageTransformer transformer, Boolean retainState) </code>
+                                            </th>
+                                            <td class="colLast">Set a custom ViewPager2.PageTransformer for <a href=BannerX.html>BannerX</a> to use.</td>
+                                        </tr>
+                                        
+                                        <tr id="i68" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>(@IntRange(from = 1, to = 5) Integer numberOfStubs, Drawable placeholder) </code>
+                                            </th>
+                                            <td class="colLast">Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        <tr id="i69" class="rowColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>(@IntRange(from = 1, to = 5) Integer numberOfStubs) </code>
+                                            </th>
+                                            <td class="colLast">Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        <tr id="i70" class="altColor">
+                                            <td class="colFirst"><code>final Unit</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>() </code>
+                                            </th>
+                                            <td class="colLast">Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="blockList">
+                                
+                                    <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+                                        <!--   -->
+                                    </a>
+                                        <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+                                        <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString,
+                                            wait, wait, wait</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul class="blockList">
+                <li class="blockList">
+                    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="constructor.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Constructor Detail</h3>
+                                
+                                <a name="BannerX(Context,AttributeSet,Integer)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>BannerX</h4>
+                                        <pre>BannerX(Context context, AttributeSet attrs, Integer defStyle)</pre>
+                                        <div class="block"></div>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="BannerX(Context,AttributeSet)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>BannerX</h4>
+                                        <pre>BannerX(Context context, AttributeSet attrs)</pre>
+                                        <div class="block"></div>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="BannerX(Context)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>BannerX</h4>
+                                        <pre>BannerX(Context context)</pre>
+                                        <div class="block"></div>
+                                        
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ============ METHOD DETAIL ========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Method Detail</h3>
+                                
+                                <a id="getIndicatorParams()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getIndicatorParams</h4>
+                                        <pre class="methodSignature"> final <a href=base/IndicatorParams.html>IndicatorParams</a> <a href=BannerX.html#getIndicatorParams()>getIndicatorParams</a>()</pre>
+                                        <div class="block"><p>The <a href=base/IndicatorParams.html>IndicatorParams</a> to be applied to the current <a href=BannerX.html#bannerXIndicator>bannerXIndicator</a>.</p><p>Changing the <a href=base/IndicatorParams.html>IndicatorParams</a> instance in <a href=BannerX.html>BannerX</a> immediately applies it to the current <a href=base/BannerXIndicator.html>BannerXIndicator</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setIndicatorParams(IndicatorParams)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setIndicatorParams</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setIndicatorParams(IndicatorParams)>setIndicatorParams</a>(<a href=base/IndicatorParams.html>IndicatorParams</a> indicatorParams)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBannerScaleAnimateParams()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBannerScaleAnimateParams</h4>
+                                        <pre class="methodSignature"> final <a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a> <a href=BannerX.html#getBannerScaleAnimateParams()>getBannerScaleAnimateParams</a>()</pre>
+                                        <div class="block"><p>The parameters for the scale animation applied to <a href=model/Banner.html>Banner</a> objects when touched or clicked.</p><p>The <a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a> interferes with the scale animations of several <a href=base/BannerXTransformer.html>BannerXTransformer</a> objects applied on <a href=BannerX.html>BannerX</a>, so the use case of applying scaling when pressing and touching a <a href=model/Banner.html>Banner</a> would vary.</p><p>NOTE: This is only applied if a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> is NOT available in <a href=BannerX.html>BannerX</a>. If a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> has been provided to <a href=BannerX.html>BannerX</a> then use the <a href=BannerX.Companion.html#doScaleAnimateOn(View,BannerScaleAnimateParams,View.OnClickListener,View.OnLongClickListener,View.OnTouchListener)>BannerX.doScaleAnimateOn</a> static method or clear the <a href=BannerX.CustomAdapter.html>CustomAdapter</a> using <a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerScaleAnimateParams(BannerScaleAnimateParams)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerScaleAnimateParams</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerScaleAnimateParams(BannerScaleAnimateParams)>setBannerScaleAnimateParams</a>(<a href=util/BannerScaleAnimateParams.html>BannerScaleAnimateParams</a> bannerScaleAnimateParams)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBannerXTransformer()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBannerXTransformer</h4>
+                                        <pre class="methodSignature"> final <a href=base/BannerXTransformer.html>BannerXTransformer</a> <a href=BannerX.html#getBannerXTransformer()>getBannerXTransformer</a>()</pre>
+                                        <div class="block"><p>The <a href=base/BannerXTransformer.html>BannerXTransformer</a> to handling swiping animations.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerXTransformer(BannerXTransformer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerXTransformer</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerXTransformer(BannerXTransformer)>setBannerXTransformer</a>(<a href=base/BannerXTransformer.html>BannerXTransformer</a> bannerXTransformer)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBannerXIndicator()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBannerXIndicator</h4>
+                                        <pre class="methodSignature"> final <a href=base/BannerXIndicator.html>BannerXIndicator</a> <a href=BannerX.html#getBannerXIndicator()>getBannerXIndicator</a>()</pre>
+                                        <div class="block"><p>The <a href=base/BannerXIndicator.html>BannerXIndicator</a> widget for displaying the number of <a href=model/Banner.html>Banner</a> objects.</p><p>Setting a new indicator will reuse the parameters defined in <a href=BannerX.html#indicatorParams>indicatorParams</a>.</p><p>If reusing the current <a href=BannerX.html#indicatorParams>indicatorParams</a> instance is not the intended behaviour, then invoking <code>setBannerXIndicator()</code> (on JVM) or changing the value though property access in Kotlin is not advisable.</p><p>Rather, reconfigure the parameters in the current <a href=BannerX.html#indicatorParams>indicatorParams</a> instance then proceed to change the <a href=base/BannerXIndicator.html>BannerXIndicator</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerXIndicator(BannerXIndicator)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerXIndicator</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerXIndicator(BannerXIndicator)>setBannerXIndicator</a>(<a href=base/BannerXIndicator.html>BannerXIndicator</a> bannerXIndicator)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getIndicatorVerticalAlignment()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getIndicatorVerticalAlignment</h4>
+                                        <pre class="methodSignature"> final <a href=enums/IndicatorVerticalAlignment.html>IndicatorVerticalAlignment</a> <a href=BannerX.html#getIndicatorVerticalAlignment()>getIndicatorVerticalAlignment</a>()</pre>
+                                        <div class="block"><p>The vertical position of the current <a href=BannerX.html#bannerXIndicator>indicator</a>. Default: <a href=enums/IndicatorVerticalAlignment.html#BOTTOM>IndicatorVerticalAlignment.BOTTOM</a></p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setIndicatorVerticalAlignment(IndicatorVerticalAlignment)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setIndicatorVerticalAlignment</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setIndicatorVerticalAlignment(IndicatorVerticalAlignment)>setIndicatorVerticalAlignment</a>(<a href=enums/IndicatorVerticalAlignment.html>IndicatorVerticalAlignment</a> indicatorVerticalAlignment)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getOnBannerChangeListener()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOnBannerChangeListener</h4>
+                                        <pre class="methodSignature"> final <a href=BannerX.OnBannerChangeListener.html>BannerX.OnBannerChangeListener</a> <a href=BannerX.html#getOnBannerChangeListener()>getOnBannerChangeListener</a>()</pre>
+                                        <div class="block"><p>Listener for <a href=model/Banner.html>Banner</a> scroll state changes.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerChangeListener(BannerX.OnBannerChangeListener)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerChangeListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerChangeListener(BannerX.OnBannerChangeListener)>setOnBannerChangeListener</a>(<a href=BannerX.OnBannerChangeListener.html>BannerX.OnBannerChangeListener</a> onBannerChangeListener)</pre>
+                                        <div class="block"><p>Listener for <a href=model/Banner.html>Banner</a> scroll state changes.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getOnBannerClickListener()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOnBannerClickListener</h4>
+                                        <pre class="methodSignature"> final <a href=BannerX.OnBannerClickListener.html>BannerX.OnBannerClickListener</a> <a href=BannerX.html#getOnBannerClickListener()>getOnBannerClickListener</a>()</pre>
+                                        <div class="block"><p>Listener for clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerClickListener(BannerX.OnBannerClickListener)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerClickListener(BannerX.OnBannerClickListener)>setOnBannerClickListener</a>(<a href=BannerX.OnBannerClickListener.html>BannerX.OnBannerClickListener</a> onBannerClickListener)</pre>
+                                        <div class="block"><p>Listener for clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getOnBannerLongClickListener()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOnBannerLongClickListener</h4>
+                                        <pre class="methodSignature"> final <a href=BannerX.OnBannerLongClickListener.html>BannerX.OnBannerLongClickListener</a> <a href=BannerX.html#getOnBannerLongClickListener()>getOnBannerLongClickListener</a>()</pre>
+                                        <div class="block"><p>Listener for long clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerLongClickListener(BannerX.OnBannerLongClickListener)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerLongClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerLongClickListener(BannerX.OnBannerLongClickListener)>setOnBannerLongClickListener</a>(<a href=BannerX.OnBannerLongClickListener.html>BannerX.OnBannerLongClickListener</a> onBannerLongClickListener)</pre>
+                                        <div class="block"><p>Listener for long clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getOnBannerDoubleClickListener()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOnBannerDoubleClickListener</h4>
+                                        <pre class="methodSignature"> final <a href=BannerX.OnBannerDoubleClickListener.html>BannerX.OnBannerDoubleClickListener</a> <a href=BannerX.html#getOnBannerDoubleClickListener()>getOnBannerDoubleClickListener</a>()</pre>
+                                        <div class="block"><p>Listener for double clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerDoubleClickListener(BannerX.OnBannerDoubleClickListener)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerDoubleClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerDoubleClickListener(BannerX.OnBannerDoubleClickListener)>setOnBannerDoubleClickListener</a>(<a href=BannerX.OnBannerDoubleClickListener.html>BannerX.OnBannerDoubleClickListener</a> onBannerDoubleClickListener)</pre>
+                                        <div class="block"><p>Listener for double clicks on <a href=model/Banner.html>Banner</a> items.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isAutoLoopable()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isAutoLoopable</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isAutoLoopable()>isAutoLoopable</a>()</pre>
+                                        <div class="block"><p>Enable or disable auto-looping/slideshows. Auto-looping is enabled by default.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAutoLoopable(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAutoLoopable</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setAutoLoopable(Boolean)>setAutoLoopable</a>(Boolean isAutoLoopable)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isManualLoopable()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isManualLoopable</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isManualLoopable()>isManualLoopable</a>()</pre>
+                                        <div class="block"><p>Enable or disable user initiated infinite scrolling. It is disabled by default.</p><p>This flag is useful in scenarios where <a href=BannerX.html#isAutoLoopable()>auto-looping</a> is explicitly disabled and the infinite scrolling feature is still needed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setManualLoopable(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setManualLoopable</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setManualLoopable(Boolean)>setManualLoopable</a>(Boolean isManualLoopable)</pre>
+                                        <div class="block"><p>Enable or disable user initiated infinite scrolling. It is disabled by default.</p><p>This flag is useful in scenarios where <a href=BannerX.html#isAutoLoopable()>auto-looping</a> is explicitly disabled and the infinite scrolling feature is still needed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isSwipeable()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isSwipeable</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isSwipeable()>isSwipeable</a>()</pre>
+                                        <div class="block"><p>Make <a href=BannerX.html>BannerX</a> swipeable. Enabled by default.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setSwipeable(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setSwipeable</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setSwipeable(Boolean)>setSwipeable</a>(Boolean isSwipeable)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isBannerClickable()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isBannerClickable</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isBannerClickable()>isBannerClickable</a>()</pre>
+                                        <div class="block"><p>Enable clicks on each <a href=model/Banner.html>Banner</a>. Enabled by default.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerClickable(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerClickable</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerClickable(Boolean)>setBannerClickable</a>(Boolean isBannerClickable)</pre>
+                                        <div class="block"><p>Enable clicks on each <a href=model/Banner.html>Banner</a>. Enabled by default.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getOverScrollMode()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getOverScrollMode</h4>
+                                        <pre class="methodSignature"> final <a href=enums/OverScrollMode.html>OverScrollMode</a> <a href=BannerX.html#getOverScrollMode()>getOverScrollMode</a>()</pre>
+                                        <div class="block"><p>The over-scroll behaviour to be applied to <a href=BannerX.html>BannerX</a> when content has reached the end. Default: <a href=enums/OverScrollMode.html#ALWAYS>ALWAYS</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOverScrollMode(OverScrollMode)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOverScrollMode</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOverScrollMode(OverScrollMode)>setOverScrollMode</a>(<a href=enums/OverScrollMode.html>OverScrollMode</a> overScrollMode)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getAutoLoopDelay()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getAutoLoopDelay</h4>
+                                        <pre class="methodSignature"> final Long <a href=BannerX.html#getAutoLoopDelay()>getAutoLoopDelay</a>()</pre>
+                                        <div class="block"><p>The time it takes for slideshows to swap <a href=model/Banner.html>Banner</a> objects. Setting this value restarts auto-looping immediately.</p><p>Default: 5000L (1000L is one second)</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAutoLoopDelay(Long)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAutoLoopDelay</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setAutoLoopDelay(Long)>setAutoLoopDelay</a>(Long autoLoopDelay)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getAutoLoopSpeed()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getAutoLoopSpeed</h4>
+                                        <pre class="methodSignature"> final Long <a href=BannerX.html#getAutoLoopSpeed()>getAutoLoopSpeed</a>()</pre>
+                                        <div class="block"><p>The swiping speed applied during auto-looping <a href=model/Banner.html>Banner</a> objects. Setting this value restarts auto-looping immediately.</p><p>Default: 1000L (1000L is one second)</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAutoLoopSpeed(Long)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAutoLoopSpeed</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setAutoLoopSpeed(Long)>setAutoLoopSpeed</a>(Long autoLoopSpeed)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getShowIndicatorText()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getShowIndicatorText</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#getShowIndicatorText()>getShowIndicatorText</a>()</pre>
+                                        <div class="block"><p>Enable or disable the <a href=BannerX.html#bannerXIndicator>bannerXIndicator</a> widget's TextView. It is disabled by default.</p><p>NOTE: For this to have any effect, the current <a href=base/BannerXIndicator.html>BannerXIndicator</a> must be a <a href=base/BannerTitleDisplayable.html>BannerTitleDisplayable</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setShowIndicatorText(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setShowIndicatorText</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setShowIndicatorText(Boolean)>setShowIndicatorText</a>(Boolean showIndicatorText)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getAllowIndicator()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getAllowIndicator</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#getAllowIndicator()>getAllowIndicator</a>()</pre>
+                                        <div class="block"><p>Enable or disable the indicator widget. Default: true</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAllowIndicator(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAllowIndicator</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setAllowIndicator(Boolean)>setAllowIndicator</a>(Boolean allowIndicator)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBannerXDirection()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBannerXDirection</h4>
+                                        <pre class="methodSignature"> final <a href=enums/BannerXDirection.html>BannerXDirection</a> <a href=BannerX.html#getBannerXDirection()>getBannerXDirection</a>()</pre>
+                                        <div class="block"><p>The direction of movement for <a href=BannerX.html>BannerX</a> when auto-looping. Default: <a href=enums/BannerXDirection.html#LTR>LTR</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerXDirection(BannerXDirection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerXDirection</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerXDirection(BannerXDirection)>setBannerXDirection</a>(<a href=enums/BannerXDirection.html>BannerXDirection</a> bannerXDirection)</pre>
+                                        <div class="block"><p>The direction of movement for <a href=BannerX.html>BannerX</a> when auto-looping. Default: <a href=enums/BannerXDirection.html#LTR>LTR</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBannerXOrientation()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBannerXOrientation</h4>
+                                        <pre class="methodSignature"> final <a href=enums/BannerXOrientation.html>BannerXOrientation</a> <a href=BannerX.html#getBannerXOrientation()>getBannerXOrientation</a>()</pre>
+                                        <div class="block"><p>The orientation for <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBannerXOrientation(BannerXOrientation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBannerXOrientation</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setBannerXOrientation(BannerXOrientation)>setBannerXOrientation</a>(<a href=enums/BannerXOrientation.html>BannerXOrientation</a> bannerXOrientation)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isRunning()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isRunning</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isRunning()>isRunning</a>()</pre>
+                                        <div class="block"><p>Verifies if <a href=BannerX.html>BannerX</a> auto-looping is running.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isStarted()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isStarted</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isStarted()>isStarted</a>()</pre>
+                                        <div class="block"><p>Verifies if <a href=BannerX.html>BannerX</a> auto-looping has started.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isStopped()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isStopped</h4>
+                                        <pre class="methodSignature"> final Boolean <a href=BannerX.html#isStopped()>isStopped</a>()</pre>
+                                        <div class="block"><p>Verifies if <a href=BannerX.html>BannerX</a> auto-looping has stopped.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="dispatchTouchEvent(MotionEvent)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>dispatchTouchEvent</h4>
+                                        <pre class="methodSignature"> Boolean <a href=BannerX.html#dispatchTouchEvent(MotionEvent)>dispatchTouchEvent</a>(MotionEvent ev)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setShapeAppearanceModel(ShapeAppearanceModel,Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setShapeAppearanceModel</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final <a href=BannerX.html>BannerX</a> <a href=BannerX.html#setShapeAppearanceModel(ShapeAppearanceModel,Boolean)>setShapeAppearanceModel</a>(ShapeAppearanceModel model, Boolean restart)</pre>
+                                        <div class="block"><p>Sets the ShapeAppearanceModel used to modify the corners and edges for each <a href=model/Banner.html>Banner</a> image.</p><p>NOTE: This is only used when a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> has NOT been set. If a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> has been provided to <a href=BannerX.html>BannerX</a> either clear it using <a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>, or provide a ShapeAppearanceModel for each individual <a href=model/Banner.html>Banner</a> using <a href=model/Banner.html#shapeAppearanceModel>Banner.shapeAppearanceModel</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>model</code> - The ShapeAppearanceModel to use for each <a href=model/Banner.html>Banner</a> image.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>restart</code> - Restart <a href=BannerX.html>BannerX</a> using the <a href=BannerX.html#setShapeAppearanceModel(ShapeAppearanceModel,Boolean)>model</a> for each <a href=model/Banner.html>Banner</a> image.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setShapeAppearanceModel(ShapeAppearanceModel)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setShapeAppearanceModel</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final <a href=BannerX.html>BannerX</a> <a href=BannerX.html#setShapeAppearanceModel(ShapeAppearanceModel,Boolean)>setShapeAppearanceModel</a>(ShapeAppearanceModel model)</pre>
+                                        <div class="block"><p>Sets the ShapeAppearanceModel used to modify the corners and edges for each <a href=model/Banner.html>Banner</a> image.</p><p>NOTE: This is only used when a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> has NOT been set. If a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> has been provided to <a href=BannerX.html>BannerX</a> either clear it using <a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>, or provide a ShapeAppearanceModel for each individual <a href=model/Banner.html>Banner</a> using <a href=model/Banner.html#shapeAppearanceModel>Banner.shapeAppearanceModel</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>model</code> - The ShapeAppearanceModel to use for each <a href=model/Banner.html>Banner</a> image.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fakeDrag(Float,Long,Long,TimeInterpolator)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fakeDrag</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration, Long delay, TimeInterpolator interpolator)</pre>
+                                        <div class="block"><p>Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>offset</code> - The number of pixels to drag by.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>duration</code> - The duration of the fake drag operation.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>delay</code> - The amount of delay applied before the fake drag operation starts.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>interpolator</code> - Optional animation interpolator to apply to the fake drag operation.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fakeDrag(Float,Long,Long)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fakeDrag</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration, Long delay)</pre>
+                                        <div class="block"><p>Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>offset</code> - The number of pixels to drag by.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>duration</code> - The duration of the fake drag operation.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>delay</code> - The amount of delay applied before the fake drag operation starts.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fakeDrag(Float,Long)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fakeDrag</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset, Long duration)</pre>
+                                        <div class="block"><p>Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>offset</code> - The number of pixels to drag by.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>duration</code> - The duration of the fake drag operation.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fakeDrag(Float)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fakeDrag</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#fakeDrag(Float,Long,Long,TimeInterpolator)>fakeDrag</a>(Float offset)</pre>
+                                        <div class="block"><p>Execute a fake drag operation on <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>offset</code> - The number of pixels to drag by.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="useCustomAdapter(BannerX.CustomAdapter)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>useCustomAdapter</h4>
+                                        <pre class="methodSignature"> final <a href=BannerX.html>BannerX</a> <a href=BannerX.html#useCustomAdapter(BannerX.CustomAdapter)>useCustomAdapter</a>(<a href=BannerX.CustomAdapter.html>BannerX.CustomAdapter</a> customAdapter)</pre>
+                                        <div class="block"><p>Set a <a href=BannerX.CustomAdapter.html>CustomAdapter</a> which <a href=BannerX.html>BannerX</a> would use to inflate <a href=model/Banner.html>Banner</a> items.</p><p>NOTE: The <a href=BannerX.CustomAdapter.html>CustomAdapter</a> should be set BEFORE a call to <a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>. However if a list of <a href=model/Banner.html>Banner</a> objects has already been provided then, <a href=BannerX.html>BannerX</a> needs to reset itself by invoking <a href=BannerX.html#restart(Boolean,Integer)>restart</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>customAdapter</code> - The <a href=BannerX.CustomAdapter.html>CustomAdapter</a> instance to be used in inflating items</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="clearCustomAdapter(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>clearCustomAdapter</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final <a href=BannerX.html>BannerX</a> <a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>(Boolean restart)</pre>
+                                        <div class="block"><p>Clears the <a href=BannerX.CustomAdapter.html>CustomAdapter</a> provided to <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>restart</code> - <code>true</code> if <a href=BannerX.html>BannerX</a> should restart immediately after clearing the <a href=BannerX.CustomAdapter.html>CustomAdapter</a>,     <code>false</code> if otherwise.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="clearCustomAdapter()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>clearCustomAdapter</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final <a href=BannerX.html>BannerX</a> <a href=BannerX.html#clearCustomAdapter(Boolean)>clearCustomAdapter</a>()</pre>
+                                        <div class="block"><p>Clears the <a href=BannerX.CustomAdapter.html>CustomAdapter</a> provided to <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="startAutoLoop()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>startAutoLoop</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#startAutoLoop()>startAutoLoop</a>()</pre>
+                                        <div class="block"><p>Starts auto-looping/slideshow.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="stopAutoLoop()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>stopAutoLoop</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#stopAutoLoop()>stopAutoLoop</a>()</pre>
+                                        <div class="block"><p>Stops the auto-looping/slideshow.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerClickListener(Function3)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerClickListener(Function3)>setOnBannerClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec)</pre>
+                                        <div class="block"><p>Sets an <a href=BannerX.OnBannerClickListener.html>OnBannerClickListener</a> for <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>exec</code> - The receiver function to be executed for each item clicked.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerLongClickListener(Function3)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerLongClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerLongClickListener(Function3)>setOnBannerLongClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec)</pre>
+                                        <div class="block"><p>Sets an <a href=BannerX.OnBannerLongClickListener.html>OnBannerLongClickListener</a> for <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>exec</code> - The receiver function to be executed for each item long clicked.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setOnBannerDoubleClickListener(Function3)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setOnBannerDoubleClickListener</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setOnBannerDoubleClickListener(Function3)>setOnBannerDoubleClickListener</a>(Function3&lt;<a href=model/Banner.html>Banner</a>, View, Integer, Unit&gt; exec)</pre>
+                                        <div class="block"><p>Sets an <a href=BannerX.OnBannerDoubleClickListener.html>OnBannerDoubleClickListener</a> for <a href=BannerX.html>BannerX</a>.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>exec</code> - The receiver function to be executed for each item double clicked.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="numberOfBanners()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>numberOfBanners</h4>
+                                        <pre class="methodSignature"> final Integer <a href=BannerX.html#numberOfBanners()>numberOfBanners</a>()</pre>
+                                        <div class="block"><p>Gets the number of <a href=model/Banner.html>Banner</a> objects this <a href=BannerX.html>BannerX</a> is handling.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setCurrentBanner(Integer,Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setCurrentBanner</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>setCurrentBanner</a>(Integer position, Boolean smoothScroll)</pre>
+                                        <div class="block"><p>Sets the <a href=model/Banner.html>Banner</a> at <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>position</a> to be displayed.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>position</code> - Index position of the <a href=model/Banner.html>Banner</a> in the list of <a href=model/Banner.html>Banner</a> objects displayed by <a href=BannerX.html>BannerX</a>.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>smoothScroll</code> - If there should be a smooth scrolling animation when changing <a href=model/Banner.html>Banner</a> positions</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setCurrentBanner(Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setCurrentBanner</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>setCurrentBanner</a>(Integer position)</pre>
+                                        <div class="block"><p>Sets the <a href=model/Banner.html>Banner</a> at <a href=BannerX.html#setCurrentBanner(Integer,Boolean)>position</a> to be displayed.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>position</code> - Index position of the <a href=model/Banner.html>Banner</a> in the list of <a href=model/Banner.html>Banner</a> objects displayed by <a href=BannerX.html>BannerX</a>.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="processList(List,Boolean,Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>processList</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList, Boolean forceUpdateIfEmpty, Integer startAtIndex)</pre>
+                                        <div class="block"><p>Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</p><p>The <a href=BannerX.html#processList(List,Boolean,Integer)>forceUpdateIfEmpty</a> parameter informs <a href=BannerX.html>BannerX</a> to reject or accept the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> if it is empty. It accepts an empty list by default.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>newList</code> - The List to process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>forceUpdateIfEmpty</code> - <code>true</code> If <a href=BannerX.html>BannerX</a> should accept an empty list and clear its data, <code>false</code> if otherwise.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>startAtIndex</code> - The index of the <a href=model/Banner.html>Banner</a> to be displayed first.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="processList(List,Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>processList</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList, Boolean forceUpdateIfEmpty)</pre>
+                                        <div class="block"><p>Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</p><p>The <a href=BannerX.html#processList(List,Boolean,Integer)>forceUpdateIfEmpty</a> parameter informs <a href=BannerX.html>BannerX</a> to reject or accept the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> if it is empty. It accepts an empty list by default.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>newList</code> - The List to process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>forceUpdateIfEmpty</code> - <code>true</code> If <a href=BannerX.html>BannerX</a> should accept an empty list and clear its data, <code>false</code> if otherwise.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="processList(List)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>processList</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#processList(List,Boolean,Integer)>processList</a>(List&lt;<a href=model/Banner.html>Banner</a>&gt; newList)</pre>
+                                        <div class="block"><p>Load the data provided in the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> into <a href=BannerX.html>BannerX</a>.</p><p>The <a href=BannerX.html#processList(List,Boolean,Integer)>forceUpdateIfEmpty</a> parameter informs <a href=BannerX.html>BannerX</a> to reject or accept the <a href=BannerX.html#processList(List,Boolean,Integer)>newList</a> if it is empty. It accepts an empty list by default.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>newList</code> - The List to process.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="restart(Boolean,Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>restart</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#restart(Boolean,Integer)>restart</a>(Boolean retainCurrentPosition, Integer restartAtIndex)</pre>
+                                        <div class="block"><p>Force <a href=BannerX.html>BannerX</a> to invalidate itself.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>retainCurrentPosition</code> - <code>true</code> if <a href=BannerX.html>BannerX</a> should continue the slideshow from where it stopped,     <code>false</code> if it should restart from beginning.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>restartAtIndex</code> - The index number of the <a href=model/Banner.html>Banner</a> that should be displayed after the restart operation.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="restart(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>restart</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#restart(Boolean,Integer)>restart</a>(Boolean retainCurrentPosition)</pre>
+                                        <div class="block"><p>Force <a href=BannerX.html>BannerX</a> to invalidate itself.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>retainCurrentPosition</code> - <code>true</code> if <a href=BannerX.html>BannerX</a> should continue the slideshow from where it stopped,     <code>false</code> if it should restart from beginning.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="restart()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>restart</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#restart(Boolean,Integer)>restart</a>()</pre>
+                                        <div class="block"><p>Force <a href=BannerX.html>BannerX</a> to invalidate itself.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setCustomPageTransformer(ViewPager2.PageTransformer,Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setCustomPageTransformer</h4>
+                                        <pre class="methodSignature"> final Unit <a href=BannerX.html#setCustomPageTransformer(ViewPager2.PageTransformer,Boolean)>setCustomPageTransformer</a>(ViewPager2.PageTransformer transformer, Boolean retainState)</pre>
+                                        <div class="block"><p>Set a custom ViewPager2.PageTransformer for <a href=BannerX.html>BannerX</a> to use.</p><p>NOTE: Custom ViewPager2.PageTransformer implementations are not saved during configuration changes.</p><p>It is recommended to use any of the provided <a href=base/BannerXTransformer.html>BannerXTransformer</a> for <a href=BannerX.html>BannerX</a> which are saved during configuration changes.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>transformer</code> - A custom built ViewPager2.PageTransformer.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>retainState</code> - <code>true</code> if <a href=BannerX.html>BannerX</a> should continue pagination on current <a href=model/Banner.html>Banner</a>, <code>false</code> to start from beginning.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="displayStubs(Integer,Drawable)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>displayStubs</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>(@IntRange(from = 1, to = 5) Integer numberOfStubs, Drawable placeholder)</pre>
+                                        <div class="block"><p>Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</p><p>NOTE: Only a maximum of 5 stubs can be generated.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>numberOfStubs</code> - The number of stub <a href=model/Banner.html>Banner</a> objects to generate.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>placeholder</code> - The image for each generated <a href=model/Banner.html>Banner</a>.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="displayStubs(Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>displayStubs</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>(@IntRange(from = 1, to = 5) Integer numberOfStubs)</pre>
+                                        <div class="block"><p>Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</p><p>NOTE: Only a maximum of 5 stubs can be generated.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>numberOfStubs</code> - The number of stub <a href=model/Banner.html>Banner</a> objects to generate.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="displayStubs()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>displayStubs</h4>
+                                        <pre class="methodSignature">@JvmOverloads() final Unit <a href=BannerX.html#displayStubs(Integer,Drawable)>displayStubs</a>()</pre>
+                                        <div class="block"><p>Display a fixed amount of stub <a href=model/Banner.html>Banner</a> objects.</p><p>NOTE: Only a maximum of 5 stubs can be generated.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>

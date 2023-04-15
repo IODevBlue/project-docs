@@ -1,0 +1,17 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.blueiobase.api.android.bannerx.base/DefaultBannerTransformer.CREATOR///PointingToDeclaration/com/blueiobase/api/android/bannerx/base/DefaultBannerTransformer.CREATOR.html
+$dokka.location:com.blueiobase.api.android.bannerx.util/BannerScaleAnimateParams.Companion///PointingToDeclaration/com/blueiobase/api/android/bannerx/util/BannerScaleAnimateParams.Companion.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.BannerViewHolder///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.BannerViewHolder.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.Companion///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.Companion.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.CustomAdapter///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.CustomAdapter.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.OnBannerChangeListener///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.OnBannerChangeListener.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.OnBannerClickListener///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.OnBannerClickListener.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.OnBannerDoubleClickListener///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.OnBannerDoubleClickListener.html
+$dokka.location:com.blueiobase.api.android.bannerx/BannerX.OnBannerLongClickListener///PointingToDeclaration/com/blueiobase/api/android/bannerx/BannerX.OnBannerLongClickListener.html
+com.blueiobase.api.android.bannerx
+com.blueiobase.api.android.bannerx.base
+com.blueiobase.api.android.bannerx.enums
+com.blueiobase.api.android.bannerx.model
+com.blueiobase.api.android.bannerx.util
+
