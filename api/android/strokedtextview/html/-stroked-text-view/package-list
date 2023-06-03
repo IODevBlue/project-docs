@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.blueiobase.api.android.strokedtextview////PointingToDeclaration/-stroked-text-view/com.blueiobase.api.android.strokedtextview/index.html
+$dokka.location:com.blueiobase.api.android.strokedtextview/StrokedTextView///PointingToDeclaration/-stroked-text-view/com.blueiobase.api.android.strokedtextview/-stroked-text-view/index.html
+$dokka.location:com.blueiobase.api.android.strokedtextview/StrokedTextView/StrokedTextView/#android.content.Context#android.util.AttributeSet?#kotlin.Int/PointingToDeclaration/-stroked-text-view/com.blueiobase.api.android.strokedtextview/-stroked-text-view/-stroked-text-view.html
+$dokka.location:com.blueiobase.api.android.strokedtextview/StrokedTextView/strokeColor/#/PointingToDeclaration/-stroked-text-view/com.blueiobase.api.android.strokedtextview/-stroked-text-view/stroke-color.html
+$dokka.location:com.blueiobase.api.android.strokedtextview/StrokedTextView/strokeWidth/#/PointingToDeclaration/-stroked-text-view/com.blueiobase.api.android.strokedtextview/-stroked-text-view/stroke-width.html
+com.blueiobase.api.android.strokedtextview
+
