@@ -1,0 +1,1 @@
+var packageSearchIndex = [{"l":"com.blueiobase.api.android.parallaxnavigationdrawer","url":"com/blueiobase/api/android/parallaxnavigationdrawer/package-summary.html"}, {"l":"All packages","url":"index.html"}]

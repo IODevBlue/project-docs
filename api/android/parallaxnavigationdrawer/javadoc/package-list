@@ -1,0 +1,7 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.blueiobase.api.android.parallaxnavigationdrawer/ParallaxNavigationDrawer.OnDrawerStateChangedListener///PointingToDeclaration/com/blueiobase/api/android/parallaxnavigationdrawer/ParallaxNavigationDrawer.OnDrawerStateChangedListener.html
+$dokka.location:com.blueiobase.api.android.parallaxnavigationdrawer/ParallaxNavigationDrawer.OnLeftDrawerStateChangedListener///PointingToDeclaration/com/blueiobase/api/android/parallaxnavigationdrawer/ParallaxNavigationDrawer.OnLeftDrawerStateChangedListener.html
+$dokka.location:com.blueiobase.api.android.parallaxnavigationdrawer/ParallaxNavigationDrawer.OnRightDrawerStateChangedListener///PointingToDeclaration/com/blueiobase/api/android/parallaxnavigationdrawer/ParallaxNavigationDrawer.OnRightDrawerStateChangedListener.html
+com.blueiobase.api.android.parallaxnavigationdrawer
+

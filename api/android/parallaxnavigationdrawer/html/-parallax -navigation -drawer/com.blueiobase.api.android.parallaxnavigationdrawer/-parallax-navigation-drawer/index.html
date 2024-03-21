@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ParallaxNavigationDrawer</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            Parallax Navigation Drawer
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":parallaxnavigationdrawer:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Parallax Navigation Drawer::com.blueiobase.api.android.parallaxnavigationdrawer/ParallaxNavigationDrawer///PointingToDeclaration//-2113026098">
+  <div class="breadcrumbs"><a href="../../../index.html">Parallax Navigation Drawer</a><span class="delimiter">/</span><a href="../index.html">com.blueiobase.api.android.parallaxnavigationdrawer</a><span class="delimiter">/</span><span class="current">ParallaxNavigationDrawer</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Parallax</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Drawer</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ParallaxNavigationDrawer</a> <span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.jvm/JvmOverloads///PointingToDeclaration/"><span class="token annotation builtin">JvmOverloads</span></span> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">attrs<span class="token operator">: </span><span data-unresolved-link="android.util/AttributeSet///PointingToDeclaration/">AttributeSet</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">defStyleAttr<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="android.view/ViewGroup///PointingToDeclaration/">ViewGroup</span></div><p class="paragraph">This is a Navigation Drawer that supports sliding from the left and right ends of the screen with parallax effect.</p><p class="paragraph">To use <code class="lang-kotlin">ParallaxNavigationDrawer</code>, you will need three layout files:</p><ul><li><p class="paragraph">One representing the left navigation drawer.</p></li><li><p class="paragraph">One representing the right navigation drawer.</p></li><li><p class="paragraph">One representing the main User Interface content.</p></li></ul><p class="paragraph">Suppose these are the layouts...</p><ul><li><p class="paragraph">The Left drawer content layout representing the left navigation drawer (<code class="lang-kotlin">drawer_left_port.xml.xml</code>)</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br>   &lt;RelativeLayout<br>       xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;<br>       android:orientation=&quot;vertical&quot;<br>       android:layout_width=&quot;match_parent&quot;<br>       android:layout_height=&quot;match_parent&quot;<br>       &gt;<br><br>       &lt;ImageView/&gt;<br><br>   &lt;/RelativeLayout&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph">The Right drawer content layout representing the right navigation drawer (<code class="lang-kotlin">drawer_right_port.xml.xml</code>)</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br>    &lt;LinearLayout<br>        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;<br>        android:orientation=&quot;vertical&quot;<br>        android:layout_width=&quot;match_parent&quot;<br>        android:layout_height=&quot;match_parent&quot;<br>        &gt;<br><br>        &lt;ImageView/&gt;<br><br>    &lt;/LinearLayout&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph">Main content layout representing the Main User Interface (<code class="lang-kotlin">drawer_main_port.xml.xml</code>)</p></li></ul><div class="sample-container"><pre><code class="block lang-xml" theme="idea">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br>    &lt;RelativeLayout<br>       xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;<br>       android:orientation=&quot;vertical&quot;<br>       android:layout_width=&quot;match_parent&quot;<br>       android:layout_height=&quot;match_parent&quot;<br>       &gt;<br><br>       &lt;com.google.android.material.appbar.AppBarLayout/&gt;<br><br>       &lt;ImageView/&gt;<br><br>       &lt;TextView/&gt;<br><br>       &lt;ImageButton/&gt;<br><br>    &lt;/RelativeLayout&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Navigate to your <code class="lang-kotlin">Activity</code> or <code class="lang-kotlin">Fragment</code> XML layout file (e.g <code class="lang-kotlin">activity_main.xml</code>), add a <code class="lang-kotlin">ParallaxNavigationDrawer</code> widget and include the layouts in the following order</p><ul><li><p class="paragraph">Left navigation drawer layout</p></li><li><p class="paragraph">Right navigation drawer layout</p></li><li><p class="paragraph">Main content layout</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">&lt;com.blueiobase.api.android.parallaxnavigationdrawer.ParallaxNavigationDrawer<br>      android:id=&quot;@+id/pnd&quot;<br>      android:layout_width=&quot;match_parent&quot;<br>      android:layout_height=&quot;match_parent&quot;<br>      android:background=&quot;@color/white&quot;<br>      app:mainContentShadowAlpha=&quot;0.5&quot;<br>      app:mainContentCloseOnTouch=&quot;true&quot;<br>      app:drawerMode=&quot;both&quot;<br>      app:parallax=&quot;true&quot;<br>      &gt;<br><br>      &lt;include layout=&quot;@layout/drawer_left_port.xml&quot;/&gt;<br><br>      &lt;include layout=&quot;@layout/drawer_right_port.xml&quot;/&gt;<br><br>      &lt;include layout=&quot;@layout/drawer_main_port.xml&quot;/&gt;<br><br>&lt;/com.blueiobase.api.android.parallaxnavigationdrawer.ParallaxNavigationDrawer&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><i><strong>NOTE:</strong></i> The layouts must be in the specified order (Left, Right, Main) and there must be no more than <i><strong>3</strong></i> layout files included in the <code class="lang-kotlin">ParallaxNavigationDrawer</code> widget unless an <span data-unresolved-link="kotlin/IllegalStateException///PointingToDeclaration/">IllegalStateException</span> would be thrown.</p><p class="paragraph">To utilize one of either drawers, add the <a href="drawer-mode.html">drawerMode</a> attribute to the <code class="lang-kotlin">ParallaxNavigationDrawer</code> widget specifying either <a href="-companion/-d-r-a-w-e-r_-m-o-d-e_-l-e-f-t.html">left</a> or <a href="-companion/-d-r-a-w-e-r_-m-o-d-e_-r-i-g-h-t.html">right</a> enum value. Then <code class="lang-kotlin">&lt;include/&gt;</code> at least two layouts.</p><ul><li><p class="paragraph">One layout representing the navigation drawer.</p></li><li><p class="paragraph">The other representing the main content User Interface.</p></li></ul><p class="paragraph"><i><strong>NOTE:</strong></i> The layout included last would be considered the main User Interface content.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">&lt;com.blueiobase.api.android.parallaxnavigationdrawer.ParallaxNavigationDrawer<br>      android:id=&quot;@+id/pnd&quot;<br>      android:layout_width=&quot;match_parent&quot;<br>      android:layout_height=&quot;match_parent&quot;<br>      android:background=&quot;@color/white&quot;<br>      app:mainContentShadowAlpha=&quot;0.5&quot;<br>      app:mainContentCloseOnTouch=&quot;true&quot;<br>      app:drawerMode=&quot;right&quot;<br>      app:parallax=&quot;true&quot;<br>      &gt;<br><br>      &lt;include layout=&quot;@layout/drawer_right_port.xml&quot;/&gt;<br><br>      &lt;include layout=&quot;@layout/drawer_main_port.xml&quot;/&gt;<br><br>&lt;/com.blueiobase.api.android.parallaxnavigationdrawer.ParallaxNavigationDrawer&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Specifying <a href="-companion/-d-r-a-w-e-r_-m-o-d-e_-n-o-n-e.html">none</a> indicates that drawers are deactivated.</p><p class="paragraph"><i><strong>NOTE:</strong></i> By default, <code class="lang-kotlin">ParallaxNavigationDrawer</code> has the <a href="drawer-mode.html">drawerMode</a> attribute set to <a href="-companion/-d-r-a-w-e-r_-m-o-d-e_-n-o-n-e.html">none</a>. This means it must be explicitly set either in the XML layout file or in the class file.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">IO DevBlue</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">1.0.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1369734765%2FConstructors%2F-2113026098" anchor-label="ParallaxNavigationDrawer" id="-1369734765%2FConstructors%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-parallax-navigation-drawer.html"><span>Parallax</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1369734765%2FConstructors%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.jvm/JvmOverloads///PointingToDeclaration/"><span class="token annotation builtin">JvmOverloads</span></span></div></div><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">attrs<span class="token operator">: </span><span data-unresolved-link="android.util/AttributeSet///PointingToDeclaration/">AttributeSet</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">defStyleAttr<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1674594041%2FClasslikes%2F-2113026098" anchor-label="Companion" id="-1674594041%2FClasslikes%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1674594041%2FClasslikes%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1624081944%2FClasslikes%2F-2113026098" anchor-label="OnDrawerStateChangedListener" id="-1624081944%2FClasslikes%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-drawer-state-changed-listener/index.html"><span>On</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1624081944%2FClasslikes%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-on-drawer-state-changed-listener/index.html">OnDrawerStateChangedListener</a></div><div class="brief "><p class="paragraph">Interface to listen to changes in the open and close states of both the left and right drawers simultaneously.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1622916383%2FClasslikes%2F-2113026098" anchor-label="OnLeftDrawerStateChangedListener" id="-1622916383%2FClasslikes%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-left-drawer-state-changed-listener/index.html"><span>On</span><wbr></wbr><span>Left</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1622916383%2FClasslikes%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-on-left-drawer-state-changed-listener/index.html">OnLeftDrawerStateChangedListener</a></div><div class="brief "><p class="paragraph">Interface to listen to changes in the open and close state of the left drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="754909582%2FClasslikes%2F-2113026098" anchor-label="OnRightDrawerStateChangedListener" id="754909582%2FClasslikes%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-right-drawer-state-changed-listener/index.html"><span>On</span><wbr></wbr><span>Right</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="754909582%2FClasslikes%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-on-right-drawer-state-changed-listener/index.html">OnRightDrawerStateChangedListener</a></div><div class="brief "><p class="paragraph">Interface to listen to changes in the open and close state of the right drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-802243482%2FProperties%2F-2113026098" anchor-label="drawerMode" id="-802243482%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="drawer-mode.html"><span>drawer</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-802243482%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="drawer-mode.html">drawerMode</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">The current <span data-unresolved-link="com.blueiobase.api.android.parallaxnavigationdrawer.annotation/DrawerMode///PointingToDeclaration/">DrawerMode</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2050143302%2FProperties%2F-2113026098" anchor-label="duration" id="2050143302%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="duration.html"><span><span>duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2050143302%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="duration.html">duration</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">The time it takes for the <a href="index.html">ParallaxNavigationDrawer</a> to complete its open and close animation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2103663180%2FProperties%2F-2113026098" anchor-label="enableSwiping" id="2103663180%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-swiping.html"><span>enable</span><wbr></wbr><span><span>Swiping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2103663180%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="enable-swiping.html">enableSwiping</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Enables swiping and dragging on the <a href="main-content-view.html">mainContentView</a> to reveal either the <a href="left-drawer-view.html">leftDrawerView</a> or <a href="right-drawer-view.html">rightDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-171118130%2FProperties%2F-2113026098" anchor-label="isLeftDrawerOpen" id="-171118130%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-left-drawer-open.html"><span>is</span><wbr></wbr><span>Left</span><wbr></wbr><span>Drawer</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-171118130%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-left-drawer-open.html">isLeftDrawerOpen</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span> to validate if the <a href="left-drawer-view.html">leftDrawerView</a> is open.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-392753709%2FProperties%2F-2113026098" anchor-label="isRightDrawerOpen" id="-392753709%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-right-drawer-open.html"><span>is</span><wbr></wbr><span>Right</span><wbr></wbr><span>Drawer</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392753709%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-right-drawer-open.html">isRightDrawerOpen</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span> to validate if the <a href="right-drawer-view.html">rightDrawerView</a> is open.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1774387811%2FProperties%2F-2113026098" anchor-label="leftDrawerView" id="-1774387811%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="left-drawer-view.html"><span>left</span><wbr></wbr><span>Drawer</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1774387811%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="left-drawer-view.html">leftDrawerView</a><span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> representing the left drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1513730904%2FProperties%2F-2113026098" anchor-label="mainContentCloseOnTouch" id="1513730904%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-content-close-on-touch.html"><span>main</span><wbr></wbr><span>Content</span><wbr></wbr><span>Close</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Touch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1513730904%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="main-content-close-on-touch.html">mainContentCloseOnTouch</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Enables the close-on-touch feature which closes the <a href="index.html">ParallaxNavigationDrawer</a> when a widget on the <a href="main-content-view.html">mainContentView</a> is touched.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1287361737%2FProperties%2F-2113026098" anchor-label="mainContentPadding" id="1287361737%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-content-padding.html"><span>main</span><wbr></wbr><span>Content</span><wbr></wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1287361737%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="main-content-padding.html">mainContentPadding</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">The padding applied to the <a href="main-content-view.html">mainContentView</a> when the <a href="index.html">ParallaxNavigationDrawer</a> is open.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1986905820%2FProperties%2F-2113026098" anchor-label="mainContentShadowAlpha" id="1986905820%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-content-shadow-alpha.html"><span>main</span><wbr></wbr><span>Content</span><wbr></wbr><span>Shadow</span><wbr></wbr><span><span>Alpha</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1986905820%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/FloatRange///PointingToDeclaration/"><span class="token annotation builtin">FloatRange</span></span><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">var </span><a href="main-content-shadow-alpha.html">mainContentShadowAlpha</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">The alpha value of the shadow applied to the <a href="main-content-view.html">mainContentView</a> when the <a href="index.html">ParallaxNavigationDrawer</a> is open.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-518477705%2FProperties%2F-2113026098" anchor-label="mainContentShadowColor" id="-518477705%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-content-shadow-color.html"><span>main</span><wbr></wbr><span>Content</span><wbr></wbr><span>Shadow</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-518477705%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"><span class="token annotation builtin">ColorInt</span></span></div></div><span class="token keyword">var </span><a href="main-content-shadow-color.html">mainContentShadowColor</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">The color of the shadow applied to the <a href="main-content-view.html">mainContentView</a> when the <a href="index.html">ParallaxNavigationDrawer</a> is open.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-624009765%2FProperties%2F-2113026098" anchor-label="mainContentView" id="-624009765%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-content-view.html"><span>main</span><wbr></wbr><span>Content</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-624009765%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="main-content-view.html">mainContentView</a><span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The main content <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> which can slide left to reveal the <a href="left-drawer-view.html">leftDrawerView</a> or slide right to reveal the <a href="right-drawer-view.html">rightDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1869515213%2FProperties%2F-2113026098" anchor-label="onDrawerStateChangedListener" id="-1869515213%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-drawer-state-changed-listener.html"><span>on</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1869515213%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="on-drawer-state-changed-listener.html">onDrawerStateChangedListener</a><span class="token operator">: </span><a href="-on-drawer-state-changed-listener/index.html">ParallaxNavigationDrawer.OnDrawerStateChangedListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Listener for the open and close states for both the left and right drawers.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="245352364%2FProperties%2F-2113026098" anchor-label="onLeftDrawerStateChangedListener" id="245352364%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-left-drawer-state-changed-listener.html"><span>on</span><wbr></wbr><span>Left</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="245352364%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="on-left-drawer-state-changed-listener.html">onLeftDrawerStateChangedListener</a><span class="token operator">: </span><a href="-on-left-drawer-state-changed-listener/index.html">ParallaxNavigationDrawer.OnLeftDrawerStateChangedListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Listener for the open and close states of the left drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="189071291%2FProperties%2F-2113026098" anchor-label="onRightDrawerStateChangedListener" id="189071291%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-right-drawer-state-changed-listener.html"><span>on</span><wbr></wbr><span>Right</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189071291%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="on-right-drawer-state-changed-listener.html">onRightDrawerStateChangedListener</a><span class="token operator">: </span><a href="-on-right-drawer-state-changed-listener/index.html">ParallaxNavigationDrawer.OnRightDrawerStateChangedListener</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Listener for the open and close states of the right drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="881642915%2FProperties%2F-2113026098" anchor-label="parallax" id="881642915%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parallax.html"><span><span>parallax</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="881642915%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="parallax.html">parallax</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Enables the parallax feature for the <a href="index.html">ParallaxNavigationDrawer</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="182545230%2FProperties%2F-2113026098" anchor-label="rightDrawerView" id="182545230%2FProperties%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="right-drawer-view.html"><span>right</span><wbr></wbr><span>Drawer</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="182545230%2FProperties%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="right-drawer-view.html">rightDrawerView</a><span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The <span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span> representing the right drawer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="496471046%2FFunctions%2F-2113026098" anchor-label="addView" id="496471046%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-view.html"><span>add</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="496471046%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-view.html"><span class="token function">addView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-view.html"><span class="token function">addView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><span data-unresolved-link="android.view/ViewGroup.LayoutParams///PointingToDeclaration/">ViewGroup.LayoutParams</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-view.html"><span class="token function">addView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-view.html"><span class="token function">addView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">child<span class="token operator">: </span><span data-unresolved-link="android.view/View///PointingToDeclaration/">View</span><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><span data-unresolved-link="android.view/ViewGroup.LayoutParams///PointingToDeclaration/">ViewGroup.LayoutParams</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1918525552%2FFunctions%2F-2113026098" anchor-label="closeLeftDrawer" id="-1918525552%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-left-drawer.html"><span>close</span><wbr></wbr><span>Left</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1918525552%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="close-left-drawer.html"><span class="token function">closeLeftDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes the <a href="left-drawer-view.html">leftDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2044188389%2FFunctions%2F-2113026098" anchor-label="closeRightDrawer" id="2044188389%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-right-drawer.html"><span>close</span><wbr></wbr><span>Right</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2044188389%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="close-right-drawer.html"><span class="token function">closeRightDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes the <a href="right-drawer-view.html">rightDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1816674084%2FFunctions%2F-2113026098" anchor-label="computeScroll" id="-1816674084%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="compute-scroll.html"><span>compute</span><wbr></wbr><span><span>Scroll</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1816674084%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="compute-scroll.html"><span class="token function">computeScroll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1945270244%2FFunctions%2F-2113026098" anchor-label="onBackPressed" id="1945270244%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-back-pressed.html"><span>on</span><wbr></wbr><span>Back</span><wbr></wbr><span><span>Pressed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1945270244%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="on-back-pressed.html"><span class="token function">onBackPressed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">A default <code class="lang-kotlin">onBackPressed()</code> operation which closes either the left or right drawer and returns a <span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span> indicating the closed state of both drawers.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="898957288%2FFunctions%2F-2113026098" anchor-label="onInterceptTouchEvent" id="898957288%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-intercept-touch-event.html"><span>on</span><wbr></wbr><span>Intercept</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="898957288%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-intercept-touch-event.html"><span class="token function">onInterceptTouchEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ev<span class="token operator">: </span><span data-unresolved-link="android.view/MotionEvent///PointingToDeclaration/">MotionEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1678406202%2FFunctions%2F-2113026098" anchor-label="onTouchEvent" id="-1678406202%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-touch-event.html"><span>on</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1678406202%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-touch-event.html"><span class="token function">onTouchEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><span data-unresolved-link="android.view/MotionEvent///PointingToDeclaration/">MotionEvent</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2112539112%2FFunctions%2F-2113026098" anchor-label="openLeftDrawer" id="-2112539112%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-left-drawer.html"><span>open</span><wbr></wbr><span>Left</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2112539112%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="open-left-drawer.html"><span class="token function">openLeftDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Opens the <a href="left-drawer-view.html">leftDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="324735325%2FFunctions%2F-2113026098" anchor-label="openRightDrawer" id="324735325%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-right-drawer.html"><span>open</span><wbr></wbr><span>Right</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="324735325%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="open-right-drawer.html"><span class="token function">openRightDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Opens the <a href="right-drawer-view.html">rightDrawerView</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1451920975%2FFunctions%2F-2113026098" anchor-label="setOnDrawerStateChangedListener" id="-1451920975%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-drawer-state-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1451920975%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-on-drawer-state-changed-listener.html"><span class="token function">setOnDrawerStateChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token punctuation">(</span>left<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span>right<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the <a href="on-drawer-state-changed-listener.html">onDrawerStateChangedListener</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="341389186%2FFunctions%2F-2113026098" anchor-label="setOnLeftDrawerStateChangedListener" id="341389186%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-left-drawer-state-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Left</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="341389186%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-on-left-drawer-state-changed-listener.html"><span class="token function">setOnLeftDrawerStateChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token punctuation">(</span>isOpen<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the <a href="-on-left-drawer-state-changed-listener/index.html">OnLeftDrawerStateChangedListener</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="534212297%2FFunctions%2F-2113026098" anchor-label="setOnRightDrawerStateChangedListener" id="534212297%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-on-right-drawer-state-changed-listener.html"><span>set</span><wbr></wbr><span>On</span><wbr></wbr><span>Right</span><wbr></wbr><span>Drawer</span><wbr></wbr><span>State</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="534212297%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-on-right-drawer-state-changed-listener.html"><span class="token function">setOnRightDrawerStateChangedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token punctuation">(</span>isOpen<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the <a href="-on-right-drawer-state-changed-listener/index.html">OnRightDrawerStateChangedListener</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="196653454%2FFunctions%2F-2113026098" anchor-label="toggleLeftDrawer" id="196653454%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="toggle-left-drawer.html"><span>toggle</span><wbr></wbr><span>Left</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="196653454%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="toggle-left-drawer.html"><span class="token function">toggleLeftDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Opens or closes the <a href="left-drawer-view.html">leftDrawerView</a> depending on its current state.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1104739161%2FFunctions%2F-2113026098" anchor-label="toggleRightDrawer" id="-1104739161%2FFunctions%2F-2113026098" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":parallaxnavigationdrawer:dokkaHtml/release" data-filterable-set=":parallaxnavigationdrawer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="toggle-right-drawer.html"><span>toggle</span><wbr></wbr><span>Right</span><wbr></wbr><span><span>Drawer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1104739161%2FFunctions%2F-2113026098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":parallaxnavigationdrawer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="toggle-right-drawer.html"><span class="token function">toggleRightDrawer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Opens or closes the <a href="right-drawer-view.html">rightDrawerView</a> depending on its current state.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
